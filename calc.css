@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #434242;
+    background: #3f3f3f;
 }
 .cal-box{
     width: 30%;
@@ -16,8 +16,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background:#292424;
-    box-shadow:  5px 5px 12px #101010,
+    background:#212020;
+    box-shadow:  5px 5px 12px #000000,
                 inset 5px 5px 12px rgba(0,0,0,.16);
     transform: skew(30);
 }
@@ -30,7 +30,7 @@
     margin-bottom: 1rem;
     border-radius: 20px;
     box-shadow: inset -5px -5px 12px #3d3d3d3b, 
-    inset 5px 5px 12px rgba(203, 198, 198, 0.55);
+    inset 5px 5px 12px rgba(154, 109, 109, 0.55);
 }
 .calculation .question{
     width: 95%;
@@ -72,7 +72,7 @@ input[type=number]::-webkit-inner-spin-button {
     flex-direction: column;
 }
 .operations{
-    border: 1.9px solid #00000021;
+    border: 1.9px solid #3e373721;
     outline: none;
     width: 3.5rem;
     height: 3.5rem;
@@ -80,8 +80,8 @@ input[type=number]::-webkit-inner-spin-button {
     margin-top: 1rem;
     font-size: 1rem;
     font-weight: 800;
-    color: #5819f6;
-    background:#9eecec;
+    color: #0bdde4;
+    background:#121212;
     box-shadow: -5px -5px 12px #2a2a2a4f, 
                 5px 5px 12px rgb(0 0 0);
 }
@@ -94,7 +94,7 @@ input[type=number]::-webkit-inner-spin-button {
     margin-top: 1rem;
     font-size: 1rem;
     font-weight: 800;
-    color: white;
+    color: rgb(144, 244, 5);
     background:#121212;
     box-shadow: -5px -5px 12px #2a2a2a4f, 
                 5px 5px 12px rgb(0 0 0);
@@ -110,12 +110,12 @@ input[type=number]::-webkit-inner-spin-button {
     font-size: 1.4rem;
     font-weight: bold;
     color: rgb(0, 0, 0);
-    background:#11f242;
+    background:#05dc4c;
     box-shadow: -5px -5px 12px #2a2a2a4f, 
                 5px 5px 12px rgb(0 0 0);
 }
 .operations:hover{
-    background: #1d7faf ;
+    background: #ffa305 ;
     color: black;
     font-size: 1.7rem;
     transform: scale(.8,.8);
@@ -130,7 +130,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .operations-equal:hover{
     background: #000000 ;
-    color: #ffa305;
+    color: #80c111;
     font-size: 1.9rem;
     transform: scale(.9,.9);
     transition: all .35s ease-in-out;
