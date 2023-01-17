@@ -1,0 +1,13 @@
+local storage
+..........
+to store datas permenently but storage capacity is very low
+
+
+store/update
+localstorage.setElement()
+
+access
+localstorage.getElement()
+
+remove
+localstorage.removeElement()

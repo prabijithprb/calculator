@@ -6,45 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="./calc.css">
-    <script src="https://kit.fontawesome.com/2265084165.js" crossorigin="anonymous"></script>
+    <scrip src="https://kit.fontawesome.com/2265084165.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="cal-main">
         <div class="cal-box">
             <div class="calculation">
-                <input type="number" class="question">
-                <input type="text" class="ans" readonly>
+                <input id="question" type="text" class="question">
+                <input id="answer" type="text" class="ans" readonly>
             </div>
             <div class="cal-button">
+                
                 <div class="button-sec-1">
-                    <button class="operations">AC</button>
-                    <button class="numbers">7</button>
-                    <button class="numbers">4</button>
-                    <button class="numbers">1</button>
-                    <button class="numbers">%</button>
+                    <button onclick="allclear()" class="operations">AC</button>
+                    <button onclick="data(7)" class="numbers">7</button>
+                    <button onclick="data(4)" class="numbers">4</button>
+                    <button onclick="data(1)" class="numbers">1</button>
+                    <button onclick="data('%')" class="numbers">%</button>
                 </div>
                 <div class="button-sec-2">
-                    <button class="operations">/</button>
-                    <button class="numbers">8</button>
-                    <button class="numbers">5</button>
-                    <button class="numbers">2</button>
-                    <button class="numbers">0</button>
+                    <button onclick="data('/')" class="operations">/</button>
+                    <button onclick="data(8)" class="numbers">8</button>
+                    <button onclick="data(5)" class="numbers">5</button>
+                    <button onclick="data(2)" class="numbers">2</button>
+                    <button onclick="data(0)" class="numbers">0</button>
                 </div>
                 <div class="button-sec-3">
-                    <button class="operations"><i class="fa-solid fa-xmark"></i></button>
-                    <button class="numbers">9</button>
-                    <button class="numbers">6</button>
-                    <button class="numbers">3</button>
-                    <button class="numbers">,</button>
+                    <button onclick="data('+')" class="operations">+</button>
+                    <button onclick="data(9)" class="numbers">9</button>
+                    <button onclick="data(6)" class="numbers">6</button>
+                    <button onclick="data(3)" class="numbers">3</button>
+                    <button onclick="data('.')" class="numbers">.</button>
                 </div>
                 <div class="button-sec-4">
-                    <button class="operations"><i class="fa-solid fa-delete-left"></i></button>
-                    <button class="operations"><i class="fa-solid fa-minus"></i></button>
-                    <button class="operations"><i class="fa-solid fa-plus"></i></button>
-                    <button class="operations-equal"><i class="fa-solid fa-equals"></i></button>
+                    <button onclick="backspace()" class="operations">DEL</button>
+                    <button onclick="data('-')" class="operations">-</button>
+                    <button onclick="data('*')" class="operations">*</i></button>
+                    <button onclick="displayquestion()"  class="operations-equal">=</button>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script src="./calc.js "></script>
 </html>
